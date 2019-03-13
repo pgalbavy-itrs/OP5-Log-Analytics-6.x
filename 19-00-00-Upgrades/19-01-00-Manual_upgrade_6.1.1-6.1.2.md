@@ -1,8 +1,12 @@
-# Manual upgrade the OP5 Log Analytics #
+# Manual update of OP5 from version 6.1.1 to 6.1.2 #
 
-The OP5 Log Anlytics update should be done by copying new versions of files to the appropriate directories. The source installation directory is: */root/pkg_6x*
+The OP5 Log Anlytics 6.1.1 update should be done by copying new versions of files to the appropriate directories. The source installation directory is: /root/pkg_6.1.2*
 
 ## Data node update ##
+
+1. Go to installation directory that contain OP5 Log Analytics 6.1.2 files:
+
+		cd /root/pkg_6.1.2
 
 1. Stop the Elasticsearch service
 		
@@ -26,6 +30,7 @@ The OP5 Log Anlytics update should be done by copying new versions of files to t
 
 ## Client Node update ##
 
+1. 
 1. Check if the following RPM packages have been installed:
 
 		yum install fontconfig freetype freetype-devel fontconfig-devel libstdc++ urw-fonts net-tools ImageMagick ghostscript poppler-utils
