@@ -1,5 +1,4 @@
-#Upgrade the OP5 Log Analytics from RPM packets#
-
+# Upgrade the OP5 Log Analytics from RPM packets #
 
 ## Client Node update ##
 

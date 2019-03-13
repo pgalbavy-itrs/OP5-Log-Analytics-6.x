@@ -1,4 +1,4 @@
-#Manual upgrade the OP5 Log Analytics#
+# Manual upgrade the OP5 Log Analytics #
 
 The OP5 Log Anlytics update should be done by copying new versions of files to the appropriate directories. The source installation directory is: */root/pkg_6x*
 
