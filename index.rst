@@ -22,6 +22,7 @@ op5_log_analytics_6x_doc User Guide
        02-00-00-Data_source_and_application_management/02-04-00-Initial_login.md
        02-00-00-Data_source_and_application_management/02-05-00-Index_selection.md
        02-00-00-Data_source_and_application_management/02-06-00-Changing_default_users_for_services.md
+       02-00-00-Data_source_and_application_management/02-07-00-Custom_installation.md
 
 .. toctree::
         :maxdepth: 2
@@ -61,6 +62,7 @@ op5_log_analytics_6x_doc User Guide
        06-00-00-User_roles_and_object_management/06-03-00-Managing_roles.md
        06-00-00-User_roles_and_object_management/06-04-00-Managing_permissions.md
        06-00-00-User_roles_and_object_management/06-05-00-Default_users_and_passwords.md
+       06-00-00-User_roles_and_object_management/06-05-01-Changing_password_for_the_system_account.md
 
 .. toctree::
         :maxdepth: 2
@@ -125,6 +127,7 @@ op5_log_analytics_6x_doc User Guide
        12-00-00-Integration_with_AD/12-02-00-AD_configuration.md
        12-00-00-Integration_with_AD/12-03-00-Configure_SSL_suport_for_AD_authentication.md
        12-00-00-Integration_with_AD/12-04-00-Role_mapping.md
+       12-00-00-Integration_with_AD/12-05.00-Password_encryption.md
 
 .. toctree::
         :maxdepth: 2
@@ -186,4 +189,11 @@ op5_log_analytics_6x_doc User Guide
         :caption: Troubleshooting
 
        18-00-00-Troubleshooting/18-01-00-Recovery_default_base_indexes.md
+
+.. toctree::
+        :maxdepth: 2
+        :caption: Upgrades
+
+       19-00-00-Upgrades/19-01-00-Manual_upgrade.md
+       19-00-00-Upgrades/19-01-00-Upgrade_from_RPM.md
        CHANGELOG.md
