@@ -1,4 +1,4 @@
-#Upgrade the OP5 Log Analytics with RPM packets#
+# Upgrade the OP5 Log Analytics with RPM packets#
 
 ## Data node (every Elasticsearch installation) update ##
 
