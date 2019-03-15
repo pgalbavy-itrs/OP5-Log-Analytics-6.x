@@ -2,7 +2,7 @@
 
 ## Data node (every Elasticsearch installation) update ##
 
-1. Currently updateing with RPMs is not supported - see manual update section.
+1. Currently updateing with RPMs is not supported - refer to manual update section when upgrading data node.
 
 ## Client Node update (GUI) ##
 
