@@ -44,7 +44,7 @@ filebeat.config.inputs:
 sudo systemctl restart filebeat # RHEL/CentOS 7
 sudo service filebeat restart # RHEL/CentOS 6
 ```
-### Kibana
+### Elasticsearch
 At this moment there should be a new index on the Elasticsearch node:
 ```bash
 curl -XGET '127.0.0.1:9200/_cat/indices?v'
