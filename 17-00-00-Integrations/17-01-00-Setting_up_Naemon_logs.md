@@ -16,7 +16,7 @@ index => "op5-naemon-%{+YYYY.MM.dd}"
 5. Copy `naemon` file to /etc/logstash/patterns and make sure it is readable by logstash process
 6. Restart *logstash* configuration e.g.:
 ```bash
-sudo kill -1 LOGSTASH_PID
+sudo systemct restart logstash
 ```
 ### Elasticsearch
 1. Connect to Elasticsearch node via SSH and Install index pattern for naemon logs. Note that if you have a default pattern covering *settings* section you should delete/modify that in naemon_template.sh:
@@ -28,6 +28,7 @@ sudo kill -1 LOGSTASH_PID
 ```
 2. Install template by running:
 `./naemon_template.sh`
+
 ### OP5 Monitor
 1. On OP5 Monitor host install filebeat (for instance via rpm `https://www.elastic.co/downloads/beats/filebeat`)
 2. In `/etc/filebeat/filebeat.yml` add:
@@ -37,9 +38,20 @@ filebeat.config.inputs:
   enabled: true
   path: configs/*.yml
 ```
-3. Create `/etc/filebeat/configs` catalog.
-4. Copy `naemon_logs.yml` to a newly created catalog.
-5. Restart filebeat:
+3. You also will have to configure the output section in `filebeat.yml`. You should have one logstash output:
+```yaml
+#----------------------------- Logstash output --------------------------------
+output.logstash:
+  # The Logstash hosts
+  hosts: ["LOGSTASH_IP:FILEBEAT_PORT"]
+```
+If you have few logstash instances - `Logstash` section has to be repeated on every node and `hosts:` should point to all of them:
+```yaml
+  hosts: ["LOGSTASH_IP:FILEBEAT_PORT", "LOGSTASH_IP:FILEBEAT_PORT", "LOGSTASH_IP:FILEBEAT_PORT" ]
+```
+4. Create `/etc/filebeat/configs` catalog.
+5. Copy `naemon_logs.yml` to a newly created catalog.
+6. Restart filebeat:
 ```bash
 sudo systemctl restart filebeat # RHEL/CentOS 7
 sudo service filebeat restart # RHEL/CentOS 6
