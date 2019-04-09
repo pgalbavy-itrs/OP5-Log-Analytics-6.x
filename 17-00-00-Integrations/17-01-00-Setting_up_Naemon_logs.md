@@ -51,7 +51,12 @@ If you have few logstash instances - `Logstash` section has to be repeated on ev
 ```
 4. Create `/etc/filebeat/configs` catalog.
 5. Copy `naemon_logs.yml` to a newly created catalog.
-6. Restart filebeat:
+6. Check the newly added configuration and connection to logstash. Location of executable might vary based on os:
+```bash
+/usr/share/filebeat/bin/filebeat --path.config /etc/filebeat/ test config
+/usr/share/filebeat/bin/filebeat --path.config /etc/filebeat/ test output
+```
+7. Restart filebeat:
 ```bash
 sudo systemctl restart filebeat # RHEL/CentOS 7
 sudo service filebeat restart # RHEL/CentOS 6
