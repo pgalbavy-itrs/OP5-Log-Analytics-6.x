@@ -23,6 +23,7 @@ op5_log_analytics_6x_doc User Guide
        02-00-00-Data_source_and_application_management/02-05-00-Index_selection.md
        02-00-00-Data_source_and_application_management/02-06-00-Changing_default_users_for_services.md
        02-00-00-Data_source_and_application_management/02-07-00-Custom_installation.md
+       02-00-00-Data_source_and_application_management/02-09-00-Plugins_management.md
 
 .. toctree::
         :maxdepth: 2
@@ -196,4 +197,11 @@ op5_log_analytics_6x_doc User Guide
 
        19-00-00-Upgrades/19-01-00-Manual_upgrade_6.1.1-6.1.2.md
        19-00-00-Upgrades/19-02-00-Upgrade_with_RPM_6.1.1-6.1.2.md
+
+.. toctree::
+        :maxdepth: 2
+        :caption: 
+
+       20-Agents_module/20-00-00_Agents_module.md
+       20-Agents_module/20-01-00_Installation_and_configuration.md
        CHANGELOG.md
