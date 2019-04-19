@@ -1,5 +1,5 @@
 # Agent installation #
-All necessary components can be found in the installation folder *${instalation_folder}/utils/agents\_bin*.
+All necessary components can be found in the installation folder *${installation_folder}/utils/agents\_bin*.
 ## Component modules ##
 The software consists of two modules:
 
@@ -81,7 +81,7 @@ It is recommended to run the Agent as a service in a given operating system.
 
 	- Installation in Windows is analogous to installing on a Linux system;
 
-	- To install the agent as a service, you can use the wrapper *${instalation_folder}/utils/agents\_bin/wrapper*;
+	- To install the agent as a service, you can use the wrapper *${installation_folder}/utils/agents\_bin/wrapper*;
 
 	- The sample of `agents.exe` and `agents.xml` files are in the *agents_bin/wrapper* directory;
 
