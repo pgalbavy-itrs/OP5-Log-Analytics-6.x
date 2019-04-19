@@ -5,8 +5,8 @@ The software consists of two modules:
 
 - Plugin Agents - installation just like any standard Kibana plugin. Before you run the module for the first time, you must add the mapping for the .agents index with the `create_temlate.sh` script
 
-- Agent software - installed on host with agent (beats);
-- MasterAgent - installed on host with the Kibana.
+- MasterAgent software - installed on host with agent (like beats);
+
 
 ## Table of configuration parameter for Agent software ##
 	
@@ -86,7 +86,3 @@ It is recommended to run the Agent as a service in a given operating system.
 	- The sample of `agents.exe` and `agents.xml` files are in the *agents_bin/wrapper* directory;
 
 	- As a working directory, set the directory where the agent configuration file is located.
-
-1. Masteragent
-
-	Masteragent is software installed on the server where the Kibana is installed. You must upload the `MasterBeatAgent.jar`, `agent.conf` and certificate file files to the `/opt` agents directory. In the `agent.conf` file, enter the correct path to the certificate file.
