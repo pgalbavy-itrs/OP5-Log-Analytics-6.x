@@ -5,6 +5,9 @@
 - New configuration option: elastfilter.proxytimeout
 - Cleaning unnecessary objects in kibana indices
 - Upgrade default logstash to 6.6.2
+- Mobile App for Energy Logserver that works with : Log Analytics, Energy Logsrver, pure ELK. x-pack is extra paid. Available for Android and ios.
+https://play.google.com/store/apps/details?id=com.logserver.mobile
+
 ## CHANGED ##
 - bugfix: problem with creating scheduled reports
 - bugfix: SSO login not working due to more secure java.policy
